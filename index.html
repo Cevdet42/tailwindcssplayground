@@ -35,7 +35,7 @@
           <!--LOGIN AREA-->
           <div class="flex items-center space-x-4 lg:space-x-8">
             <!--SEARCH AREA-->
-            <form>
+            <form class="hidden md:block">
               <div class="group border-r px-4 mx-4 py-1 border-gega-red">
                 <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-24 lg:w-44 transition duration-500">
                 <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
@@ -62,7 +62,13 @@
     <!-- Sidebar -->
     <div id="sidebar" class="fixed top-0 right-0 h-full w-0 bg-black text-white transition-all duration-500 overflow-hidden z-50 uppercase">
       <button class="absolute top-4 right-4 text-2xl" onclick="closeSidebar()">×</button>
-      <nav class="flex flex-col mt-16 space-y-4 text-lg px-8">
+      <form>
+        <div class="mt-30 group px-4 mx-4 py-1 border-gega-red">
+          <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-44 transition duration-500">
+          <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
+        </div>
+      </form>
+      <nav class="flex flex-col mt-10 space-y-4 text-lg px-8">
         <a href="#" class="hover:text-gega-melon transition duration-500">movies</a>
         <a href="#" class="hover:text-gega-melon transition duration-500">celebrities</a>
         <a href="#" class="hover:text-gega-melon transition duration-500">blog</a>
