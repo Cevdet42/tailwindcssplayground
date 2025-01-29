@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --font-open: "Open Sans", "sans-serif"; 
     --font-gemunu: "Gemunu Libre", "sans-serif"; 
